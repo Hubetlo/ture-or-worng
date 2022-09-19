@@ -94,5 +94,14 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.clearScreen()
-    basic.showString("Welcome" + "to" + "use" + "login" + "machine")
+    basic.showString("Thank" + "you" + "to" + "use" + "login" + "machine")
+})
+basic.forever(function () {
+    if (Wrong_number >= 10) {
+        for (let index = 0; index < 4; index++) {
+            music.playTone(988, music.beat(BeatFraction.Whole))
+            music.playTone(784, music.beat(BeatFraction.Whole))
+        }
+        basic.showString("Leave Now!")
+    }
 })
