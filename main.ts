@@ -21,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    if (input.temperature() >= 20) {
+    if (input.temperature() >= 50) {
         basic.showLeds(`
             . # . . #
             # . . # .
